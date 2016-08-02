@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+  
+
+<hibernate-mapping>
+    <class name="com.GDP.test.model.Event" table="events" schema="gdpbackenddatabase">
+        <id name="eventName" column="eventname"></id>
+        
+        <property name="dateOfEvent" column="dateofevent"></property>
+        <property name="submissionDueDate" column="submissionduedate"></property>
+        <property name="organizerName" column="organizer"></property>              
+        <property name="eventDescription" column="eventdescription"></property>        
+       
+    </class>
+    
+</hibernate-mapping>

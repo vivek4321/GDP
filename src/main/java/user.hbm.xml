@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+  
+
+<hibernate-mapping>
+    <class name="com.GDP.test.model.User" table="users" schema="gdpbackenddatabase">
+        <id name="email" column="email"></id>
+        
+        <property name="password" column="password"></property>
+        <property name="firstName" column="firstname"></property>
+        <property name="lastName" column="lastname"></property>              
+        <property name="contactNumber" column="contactnumber"></property>
+        <property name="dob" column="dateofbirth"></property>
+        <property name="isAuthor" column="isauthor"></property>
+        <property name="isReviewer" column="isreviewer"></property>
+        <property name="isProgramChair" column="isprogramchair"></property>
+       
+    </class>
+    
+</hibernate-mapping>
